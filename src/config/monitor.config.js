@@ -6,10 +6,12 @@ let config = {};
 
 function buildConfiguration() {
 
-    logger.info(`Entorno::${process.env.NODE_ENV}`)
-    dotenv.config({        
-        path: path.resolve('./src/env/', `${process.env.NODE_ENV}.env`)
-    });
+    if (process.env.NODE_ENV){
+        logger.info('Entorno::Desarrollo');
+        dotenv.config({        
+            path: path.resolve('./src/env/', 'dev.env')
+        });
+    }    
 
     config.mysql = {
         host: process.env.MYSQL_HOST,
