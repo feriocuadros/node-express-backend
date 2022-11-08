@@ -1,0 +1,25 @@
+{
+  "name": "monitor-backend",
+  "version": "1.0.0",
+  "description": "Monitor de alarmas y alertas de euromotors",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "set NODE_ENV=development&& nodemon server.js",
+    "prod": "set NODE_ENV=production&& node server.js"
+  },
+  "author": "Euromotors",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "moment-timezone": "^0.5.38",
+    "morgan": "^1.10.0",
+    "mysql2": "^2.3.3",
+    "rotating-file-stream": "^3.0.4",
+    "winston": "^3.8.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
