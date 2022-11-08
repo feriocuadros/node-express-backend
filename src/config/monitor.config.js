@@ -21,7 +21,7 @@ function buildConfiguration() {
         database: process.env.MYSQL_DATABASE
     }
 
-    logger.info(config);
+    logger.info('', config);
     logger.info('Configuracion cargada exitosamente');
     return config;
 }
