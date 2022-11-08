@@ -15,7 +15,6 @@ app.use(function (req, res, next) {
 app.use(morgan('combined'));
 app.use('/', require('./src/routes'));
     
-require('./src/config/monitor.config').buildConfiguration();
 logger.info('Servidor iniciado exitosamente');
 
 module.exports = app;
