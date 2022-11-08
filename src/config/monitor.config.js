@@ -16,12 +16,12 @@ function buildConfiguration() {
     config.mysql = {
         host: process.env.MYSQL_HOST,
         username: process.env.MYSQL_USER,
-        password: process.env.MYSQL_PASS,
+        password: process.env.MYSQL_PASSWORD,
         port: process.env.MYSQL_PORT,
         database: process.env.MYSQL_DATABASE
     }
 
-    logger.info('', config);
+    logger.log('', config)
     logger.info('Configuracion cargada exitosamente');
     return config;
 }
