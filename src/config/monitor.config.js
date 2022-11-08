@@ -14,11 +14,11 @@ function buildConfiguration() {
     }    
 
     config.mysql = {
-        host: process.env.MYSQL_HOST,
-        username: process.env.MYSQL_USER,
-        password: process.env.MYSQL_PASS,
-        port: process.env.MYSQL_PORT,
-        database: process.env.MYSQL_DATABASE
+        host: process.env.MYSQLHOST,
+        username: process.env.MYSQLUSER,
+        password: process.env.MYSQLPASS,
+        port: process.env.MYSQLPORT,
+        database: process.env.MYSQLDATABASE
     }
 
     logger.info('Configuracion cargada exitosamente');
