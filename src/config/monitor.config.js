@@ -6,6 +6,7 @@ let config = {};
 
 function buildConfiguration() {
 
+    logger.info(process.env.NODE_ENV);
     if (process.env.NODE_ENV){
         logger.info('Entorno::Desarrollo');
         dotenv.config({        
